@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulaire Inscription</title>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+</head>
+<body>
+	<h1>Formulaire d'inscription </h1>
+	<fieldset>
+		<h2> Inscription: </h2>
+		<form action="" >
+			<div class="inscription">
+				<label for="nom">Nom :</label>	<input type="text" id="nom" value= "michel" required="" /></br>
+				<label for="prenom">Prénom :</label><input type="text" id="prenom" value = "odile" required=""/></br>
+				<label for="date de naissance">Date de naissanc : </label><input type="date" value= "2014/09/23" id="date" /></br>
+				<label for="city">Ville :</label><input type="text" id="city" value = "NY" required="" /></br>
+
+
+				<input type= "radio" id="feminin" value= "true">Feminin</br>
+				<input type= "radio" id="masculin" value="true">Masculin</br>
+			</div>
+			<div class="identification">
+				<h2>Identification</h2>
+				
+				<label for="login" >Login : </label><input type="text" id="login"  value= "Michou" required=""  /></br>
+				<label for="password">Mot de passe : </label><input type="password" id="password" value= "Azerty67" minlength="8"  required="" /></br>
+
+				<label for="email"> email : </label><input type="email"  id="email" value= "sdf@orange.fr" required autocomplete="on" placeholder ='____@___.fr' /></br>
+				<label>téléphone </label><input type = 'tel' id="tel"  minlength="10" value="0909090909"/>
+
+				<div class="infos">
+					<h2>Infos complémentaires</h2>
+					<label for="textcolor">Votre couleur préférée: </label> <input type="color" id="textcolor" value='#FFFFF'></br>
+					<label for="hobbys">Quels sont vos hobbys?</label></br>
+					<textarea id="hobbys" maxlength="50" ></textarea>	
+				</div>
+				<INPUT id="validation" TYPE="submit" NAME="nom" VALUE=" Envoyer ">
+				</form>
+
+				<div id="app"></div>
+				<script src="http://code.jquery.com/jquery.js"></script>
+				
+				<script type="text/javascript" src=http://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js></script>
+
+				<script type="text/javascript" src="app.js"></script>
+
+			</body>
+			</html>
